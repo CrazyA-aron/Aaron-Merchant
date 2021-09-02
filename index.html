@@ -60,16 +60,90 @@ a{text-decoration: none;}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Aaron Merchant.</h1>
+
+
+
+     <div class="center text">
+      <label data-content="I'm Aaron Merchant"><span>I'm Aaron Merchant</span></label>
+    </div>
+    <br>
+    <br>
     <p>A small web developer</p>
     <img src="man_smoke.jpg" alt="boy" class="w3-image" width="661" height="738">
-  </header>
+   
+    
+
+    <style> 
+.center{
+  position: absolute;
+  top: 4%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+}
+.text label{
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+label span{
+  position: relative;
+  color: white;
+  z-index: 2;
+}
+label span{
+  filter: blur(1px);
+}
+.text label::before,
+.text label::after{
+  position: absolute;
+  content: attr(data-content);
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+.text label::before,
+.text label::after{
+  visibility: visible;
+}
+.text label::before{
+  color: rgba(255,0,188,.8);
+  animation: glitch .3s cubic-bezier(.25,.46,.45,.94) both infinite;
+}
+.text label::after{
+  color: rgba(0,255,255,.8);
+  animation: glitch .3s cubic-bezier(.25,.46,.45,.94) reverse both infinite;
+}
+@keyframes glitch {
+  0%{
+    transform: translate(0);
+  }
+  20%{
+    transform: translate(-3px, 3px);
+  }
+  40%{
+    transform: translate(-3px, -3px);
+  }
+  60%{
+    transform: translate(3px, 3px);
+  }
+  80%{
+    transform: translate(3px, -3px);
+  }
+  100%{
+    transform: translate(0);
+  }
+}
+    </style>
 
 
-  <div class="circle"> 
+
+
+
+
+<div class="circle"> 
     <a href="#about"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
     </div>
-    
   <style>
   
   .circle {
@@ -146,7 +220,7 @@ a{text-decoration: none;}
 <br>
 
 
-
+</header>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
@@ -155,9 +229,9 @@ a{text-decoration: none;}
     <p>Hello my name is Aaron, I'm a small web developer, Im 13 years old, and I'm from the UK, I aspire to become a succesfull Full Stack Web Developer in the future, I love to problem solve and I'm a big fan of coding. I love HTML, JS and CSS, I find these languages intriguing and fun to learn. Thank you for taking your time to check this website out!
     </p>
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Video Editing</p>
+    <p class="w3-wide">Photography</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:40%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:20%"></div>
     </div>
     <p class="w3-wide">Web Design</p>
     <div class="w3-white">
