@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
 </head>
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -64,6 +65,89 @@ a{text-decoration: none;}
     <img src="man_smoke.jpg" alt="boy" class="w3-image" width="661" height="738">
   </header>
 
+
+  <div class="circle"> 
+    <a href="#about"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+    </div>
+    
+  <style>
+  
+  .circle {
+    position: absolute;
+    top: 129%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    line-height: 110px;
+    font-size: 80px;
+    overflow: hidden;
+  }
+
+  .circle .fa {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    animation: animate 1s linear infinite;
+  }
+  @keyframes animate{
+    0%{
+      transform: translateY(-50px);
+      text-shadow: 0 50px 0 #fff;
+    }
+    20%{
+      transform: translateY(0px);
+      text-shadow: 0 10px 0 #fff;
+    }
+    40%{
+      transform: translateY(0px);
+      text-shadow: 0 50px 0 #fff;
+    }
+    60%{
+      transform: translateY(0px);
+      text-shadow: 0 50px 0 #fff;
+    }
+    100%{
+      transform: translateY(100px);
+      text-shadow: 0 50px 0 #fff;
+    }
+  }
+
+  .circle:before {
+    content: 'SCROLL DOWN';
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    font-family: Arial;
+    font-size: 15px;
+    left: 22px;
+    top: 70px;
+  }
+  
+  </style>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">About Me</h2>
@@ -93,6 +177,7 @@ a{text-decoration: none;}
     <!-- Testimonials -->
     <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
     <p>Don't have one :.( Help me</p>
+
 
   <!-- End About Section -->
   <div class="w3-row-padding" style="margin:0 -16px" id="projects">
@@ -157,7 +242,10 @@ a{text-decoration: none;}
       <p class="w3-medium">A Simple Clock</p>
       <a href="https://Clock.aaronmerchant.repl.co" target="_blank"><button class="button"><span>Learn More</span></button></a>
     </div>
-  
+
+
+
+
     
   <!-- End Portfolio Section -->
   </div>
@@ -187,6 +275,9 @@ a{text-decoration: none;}
 
 <!-- END PAGE CONTENT -->
 </div>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
